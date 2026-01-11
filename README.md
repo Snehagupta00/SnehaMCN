@@ -4,10 +4,15 @@ FOMO-driven habit building game for Gen Z users (ages 16-25) with daily missions
 
 ## 🎥 Project Demo Video
 
-<video width="100%" controls>
-  <source src="MCN-Video.mp4" type="video/mp4">
-  Your browser does not support the video tag. [Download the video](MCN-Video.mp4) to view it.
-</video>
+<iframe
+  src="https://player.cloudinary.com/embed/?cloud_name=vipinyadav01&public_id=oi8uswhtifhy1bk8p6u0&profile=cld-default"
+  width="640"
+  height="360" 
+  style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+  allowfullscreen
+  frameborder="0"
+></iframe>
 
 *Watch the MCN project demo video showcasing the FOMO Mission Rewards application features and user experience.*
 
