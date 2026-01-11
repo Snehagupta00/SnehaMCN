@@ -748,5 +748,3 @@ flowchart TD
 6. **Fraud Detection**: Fraud score tracking in MissionAttempt
 
 ---
-
-*Last Updated: 2024*
