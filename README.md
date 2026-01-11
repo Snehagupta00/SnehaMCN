@@ -104,14 +104,38 @@ Scan QR code with Expo Go app or run on emulator.
 
 ## 📚 Documentation
 
-- `docs/ARCHITECTURE.md` - **Complete architecture documentation** including:
-  - ERD (Entity Relationship Diagram)
-  - DRD (Data Relationship Diagram)
-  - User Journey / Flow diagrams
-- `Fomo/README.md` - Mobile app details
-- `server/README.md` - Backend API docs
+### Architecture Documentation (`docs/`)
+
+- **`docs/ARCHITECTURE.md`** - Complete architecture documentation including:
+  - 📊 **ERD (Entity Relationship Diagram)** - Database schema with all entities and relationships
+  - 🔄 **DRD (Data Relationship Diagram)** - Data flow through the system layers
+  - 🗺️ **User Journey / Flow Diagrams** - 7 comprehensive user flow diagrams:
+    1. Authentication Flow
+    2. Mission Discovery & Completion Flow
+    3. Reward & Wallet Flow
+    4. Streak Management Flow
+    5. Navigation Flow
+    6. Notification Flow
+    7. Data Synchronization Flow
+
+- **`docs/README.md`** - Documentation guide and quick reference
+
+### Project Documentation
+
+- **`Fomo/README.md`** - Mobile app details and setup
+- **`server/README.md`** - Backend API documentation
+
+### Quick Links
+
+| Documentation | Description | Location |
+|--------------|-------------|----------|
+| **ERD** | Entity Relationship Diagram | `docs/ARCHITECTURE.md` |
+| **DRD** | Data Relationship Diagram | `docs/ARCHITECTURE.md` |
+| **User Flows** | All user journey diagrams | `docs/ARCHITECTURE.md` |
+| **API Docs** | Backend API endpoints | `server/README.md` |
+| **App Guide** | Mobile app documentation | `Fomo/README.md` |
 
 ## 📹 Resources
 
-- `MCN-Video.mp4` - MCN project video/demo (located in root directory)
+- **`MCN-Video.mp4`** - MCN project video/demo (located in root directory)
 
