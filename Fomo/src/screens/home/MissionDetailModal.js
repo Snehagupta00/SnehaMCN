@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useMemo } from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
+import React, { useEffect, useState, useMemo, useRef } from 'react';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Animated } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useSelector } from 'react-redux';
@@ -19,6 +19,7 @@ export default function MissionDetailModal({ navigation, route }) {
   const { multiplier } = useSelector((state) => state.streaks);
   const mission = missions.find((m) => m.mission_id === missionId);
   const [timeRemaining, setTimeRemaining] = useState(mission?.time_remaining_hours || 0);
+  const progressAnim = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -80,6 +81,22 @@ export default function MissionDetailModal({ navigation, route }) {
   const progress = mission.expires_at
     ? Math.max(0, Math.min(100, (timeLeftMs / (24 * 60 * 60 * 1000)) * 100))
     : 0;
+
+  // Animate progress bar
+  useEffect(() => {
+    Animated.timing(progressAnim, {
+      toValue: progress,
+      duration: 300,
+      useNativeDriver: false,
+    }).start();
+  }, [progress, progressAnim]);
+
+  const progressAnimation = useMemo(() => ({
+    width: progressAnim.interpolate({
+      inputRange: [0, 100],
+      outputRange: ['0%', '100%'],
+    }),
+  }), [progressAnim]);
 
   const totalReward = Math.floor(mission.base_reward * multiplier);
 

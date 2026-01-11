@@ -104,6 +104,14 @@ Scan QR code with Expo Go app or run on emulator.
 
 ## 📚 Documentation
 
+- `docs/ARCHITECTURE.md` - **Complete architecture documentation** including:
+  - ERD (Entity Relationship Diagram)
+  - DRD (Data Relationship Diagram)
+  - User Journey / Flow diagrams
 - `Fomo/README.md` - Mobile app details
 - `server/README.md` - Backend API docs
+
+## 📹 Resources
+
+- `MCN-Video.mp4` - MCN project video/demo (located in root directory)
 
