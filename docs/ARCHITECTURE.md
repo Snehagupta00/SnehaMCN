@@ -84,7 +84,7 @@ erDiagram
 
     WALLET {
         string wallet_id PK
-        string user_id FK UK
+        string user_id FK
         number total_balance
         date updated_at
         string currency
@@ -93,7 +93,7 @@ erDiagram
 
     STREAK {
         string streak_id PK
-        string user_id FK UK
+        string user_id FK
         number current_streak_count
         number max_streak_ever
         date last_completion_date

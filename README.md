@@ -2,6 +2,15 @@
 
 FOMO-driven habit building game for Gen Z users (ages 16-25) with daily missions, streaks, and reward multipliers.
 
+## 🎥 Project Demo Video
+
+<video width="100%" controls>
+  <source src="MCN-Video.mp4" type="video/mp4">
+  Your browser does not support the video tag. [Download the video](MCN-Video.mp4) to view it.
+</video>
+
+*Watch the MCN project demo video showcasing the FOMO Mission Rewards application features and user experience.*
+
 ## 🚀 Tech Stack
 
 - **Backend**: Node.js 18+, Express.js, MongoDB 6.0+, Redis
@@ -138,4 +147,5 @@ Scan QR code with Expo Go app or run on emulator.
 ## 📹 Resources
 
 - **`MCN-Video.mp4`** - MCN project video/demo (located in root directory)
+  - Video showcases the FOMO Mission Rewards application features and user experience
 
