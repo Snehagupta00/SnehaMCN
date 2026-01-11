@@ -1,0 +1,87 @@
+{
+  "expo": {
+    "name": "FOMO",
+    "slug": "fomo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/ios/AppIcon~ios-marketing.png",
+    "scheme": "fomo",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fomo.app",
+      "icon": "./assets/ios/AppIcon~ios-marketing.png",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true,
+          "NSExceptionDomains": {
+            "localhost": {
+              "NSExceptionAllowsInsecureHTTPLoads": true,
+              "NSIncludesSubdomains": true
+            },
+            "127.0.0.1": {
+              "NSExceptionAllowsInsecureHTTPLoads": true,
+              "NSIncludesSubdomains": true
+            }
+          }
+        }
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1E88E5",
+        "foregroundImage": "./assets/android/res/mipmap-xxxhdpi/Fomo_foreground.png",
+        "backgroundImage": "./assets/android/res/mipmap-xxxhdpi/Fomo_background.png",
+        "monochromeImage": "./assets/android/res/mipmap-xxxhdpi/Fomo_monochrome.png"
+      },
+      "icon": "./assets/android/res/mipmap-xxxhdpi/Fomo.png",
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.PACKAGE_USAGE_STATS"
+      ]
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/web/favicon.ico",
+      "appleTouchIcon": "./assets/web/apple-touch-icon.png",
+      "icon": "./assets/web/icon-512.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/ios/AppIcon~ios-marketing.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#1E88E5",
+          "dark": {
+            "backgroundColor": "#0D47A1"
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you select mission proof images.",
+          "cameraPermission": "The app accesses your camera to let you take photos for mission proof."
+        }
+      ],
+      "./app.plugin.js"
+    ],
+    "experiments": {
+      "reactCompiler": true
+    },
+    "fonts": [
+      "./assets/Fonts/Poppins/Poppins-Regular.ttf",
+      "./assets/Fonts/Poppins/Poppins-Medium.ttf",
+      "./assets/Fonts/Poppins/Poppins-SemiBold.ttf",
+      "./assets/Fonts/Poppins/Poppins-Bold.ttf",
+      "./assets/Fonts/Poppins/Poppins-ExtraBold.ttf",
+      "./assets/Fonts/Roboto/static/Roboto-Regular.ttf",
+      "./assets/Fonts/Roboto/static/Roboto-Medium.ttf",
+      "./assets/Fonts/Roboto/static/Roboto-Bold.ttf"
+    ]
+  }
+}
