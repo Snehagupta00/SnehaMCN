@@ -4,8 +4,17 @@ FOMO-driven habit building game for Gen Z users (ages 16-25) with daily missions
 
 ## 🎥 Project Demo Video
 
+[![Watch the Video](https://img.shields.io/badge/▶️-Watch%20Demo%20Video-1E88E5?style=for-the-badge&logo=cloudinary)](https://player.cloudinary.com/embed/?cloud_name=ddybvvvzz&public_id=MCN-Video_i9xpsp&profile=cld-default)
+
+**👉 [Click here to watch the MCN project demo video](https://player.cloudinary.com/embed/?cloud_name=ddybvvvzz&public_id=MCN-Video_i9xpsp&profile=cld-default)**
+
+*Video showcases the FOMO Mission Rewards application features and user experience.*
+
+<details>
+<summary>📺 Embedded Player (works in VS Code, GitHub Pages, and other HTML-enabled viewers)</summary>
+
 <iframe
-  src="https://player.cloudinary.com/embed/?cloud_name=vipinyadav01&public_id=oi8uswhtifhy1bk8p6u0&profile=cld-default"
+  src="https://player.cloudinary.com/embed/?cloud_name=ddybvvvzz&public_id=MCN-Video_i9xpsp&profile=cld-default"
   width="640"
   height="360" 
   style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
@@ -14,7 +23,7 @@ FOMO-driven habit building game for Gen Z users (ages 16-25) with daily missions
   frameborder="0"
 ></iframe>
 
-*Watch the MCN project demo video showcasing the FOMO Mission Rewards application features and user experience.*
+</details>
 
 ## 🚀 Tech Stack
 
