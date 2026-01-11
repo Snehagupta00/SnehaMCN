@@ -19,8 +19,34 @@ router.post('/register', async (req, res) => {
       });
     }
 
+    // Validate email must be Gmail
+    const emailLower = email.toLowerCase().trim();
+    if (!emailLower.endsWith('@gmail.com')) {
+      return res.status(400).json({
+        success: false,
+        error: 'Email must be a Gmail address (@gmail.com)',
+      });
+    }
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailLower)) {
+      return res.status(400).json({
+        success: false,
+        error: 'Invalid email format',
+      });
+    }
+
+    // Validate password must be at least 8 characters
+    if (password.length < 8) {
+      return res.status(400).json({
+        success: false,
+        error: 'Password must be at least 8 characters long',
+      });
+    }
+
     // Check if user exists
-    const existingUser = await User.findOne({ email: email.toLowerCase() });
+    const existingUser = await User.findOne({ email: emailLower });
     if (existingUser) {
       return res.status(400).json({
         success: false,
@@ -47,7 +73,7 @@ router.post('/register', async (req, res) => {
     const userId = uuidv4();
     const user = new User({
       user_id: userId,
-      email: email.toLowerCase(),
+      email: emailLower,
       username: username,
       password_hash: passwordHash,
       timezone: timezone || 'UTC',
@@ -109,7 +135,24 @@ router.post('/login', async (req, res) => {
       });
     }
 
-    const user = await User.findOne({ email: email.toLowerCase() });
+    // Validate email must be Gmail
+    const emailLower = email.toLowerCase().trim();
+    if (!emailLower.endsWith('@gmail.com')) {
+      return res.status(400).json({
+        success: false,
+        error: 'Email must be a Gmail address (@gmail.com)',
+      });
+    }
+
+    // Validate password must be at least 8 characters
+    if (password.length < 8) {
+      return res.status(400).json({
+        success: false,
+        error: 'Password must be at least 8 characters long',
+      });
+    }
+
+    const user = await User.findOne({ email: emailLower });
     if (!user) {
       return res.status(401).json({
         success: false,

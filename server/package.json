@@ -6,11 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "seed": "node utils/seedData.js",
-    "seed:demo": "node utils/seedDemoData.js",
-    "seed:all": "node utils/seedAllData.js",
-    "clear:data": "node utils/clearAllData.js",
-    "reset:data": "node utils/clearAllData.js && node utils/seedAllData.js",
+    "seed:data": "node utils/seedAllData.js",
     "test": "jest"
   },
   "keywords": ["gamification", "rewards", "habits", "micro-missions"],
