@@ -2,6 +2,16 @@
 
 FOMO-driven habit building game for Gen Z users (ages 16-25) with daily missions, streaks, and reward multipliers.
 
+## 📋 Quick Navigation
+
+**Architecture Documentation:**
+- 📊 [ERD (Entity Relationship Diagram)](docs/ARCHITECTURE.md#erd-entity-relationship-diagram) - Database schema with all entities and relationships
+- 🔄 [DRD (Data Relationship Diagram)](docs/ARCHITECTURE.md#drd-data-relationship-diagram) - Data flow through the system layers
+- 🗺️ [User Journey / Flow Diagrams](docs/ARCHITECTURE.md#user-journey--flow-diagrams) - 7 comprehensive user flow diagrams
+- 📁 [Documentation Folder](docs/) - Complete architecture documentation
+
+**All documentation is located in the [`docs/`](docs/) folder.**
+
 ## 🎥 Project Demo Video
 
 [![Watch the Video](https://img.shields.io/badge/▶️-Watch%20Demo%20Video-1E88E5?style=for-the-badge&logo=cloudinary)](https://player.cloudinary.com/embed/?cloud_name=ddybvvvzz&public_id=MCN-Video_i9xpsp&profile=cld-default)
